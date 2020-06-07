@@ -1,0 +1,3 @@
+[submodule "python_tutorials"]
+	path = python_tutorials
+	url = https://github.com/YesselmanLab/python_tutorials
