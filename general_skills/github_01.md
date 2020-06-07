@@ -26,7 +26,7 @@ So now that you see the importance of using `git`/github, we can start using it!
 
 If none of the above options work, go to this [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to find additional instructions for your machine. 
 To setup a github account, go github's [website](https://github.com/) and follow the on-screen directions to setup an account. With this all set up, you can move onto the next stage!
-## Part II: Understanding repo's and making a clone of an existing project
+## Part II: Understanding repo's, cloning and branches
 
 In the scope of github, a repository, or repo, is the space in which a single project lives. For most purposes, a repo is equivalent to a directory and can hold almost anything you can put in a directory on your computer, though there are often storage limits on github. Roughly speaking, a repo **is** a project, so understanding how to maneuver them is key to using `git`/github. 
 
@@ -36,3 +36,11 @@ As updates are made to a project (how to do so will be discussed later) there ar
 1. The local and remote repo's are identical. This scenario is pretty straightforward and where you likely where you find yousrself now. There is no difference between the the local and remote versions of the project. 
 1. The local repo is "ahead" of the remote repo. In this situation, updates have been made to the local version of the project and these updates have not been applied to the remote repo. 
 1. The remote repo is "ahead" of the local repo. In this situation, updates have been made to the remote version of the project and these updates have not been applied to the local version of the repo.
+
+Another important facet of using `git`/github is understanding branches. A branch is a specific version of a repo and can be manifested both locally and remotely. It's very common for each branch to be devoted to a specific purpose. A typical project would often have branches as follow:
+  + a `master` branch that contains the production code ready for use (note that each project comes with a single `master` branch by default)
+  + a `devel` or `developer` branch that contains code for in-progress features not ready for deployment
+  + a variety of programmer-specific branches where person stores the specific updates and progress they are working on
+  + versions of the code for different target operating systems
+
+## Part III: Basic Workflow
