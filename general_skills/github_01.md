@@ -47,4 +47,20 @@ With all of this basic knowledge, we can now take a look at typical `git`/github
 
 ## Part III: Basic Workflow
 Here we will cover what basic workflow you will encounter when using `git`/github. It should be noted that this coverage is slanted towards doing work on a large project, so some of these steps will not be relevant for smaller projects. In general, it's good to remember that there are not one size fits all solutions. Follow along with the below commands and their descriptions:
-  + from `test_project/`, enter the command `git checkout -b "[NAME]_dev"`
+  + from `test_project/`, enter the command `git checkout -b "[NAME]_dev"`. This action creates a new local branch, called `[NAME]_dev`, which is where you will be doing your work.
+  + enter the command `git show-branch`. This should show all of branches in the project and there should be an asterisk next to the branch you are on. 
+  + `$ echo "THIS IS AN EXTRA LINE" >> README.md && echo "THIS IS A NEW FILE" >> newfile.txt`. This will concatenate the text "THIS IS AN EXTRA LINE" to the end of the readme and make a new file, `newfile.txt`
+  + `$ git status`. This will show the current status of the local repo, which includes things like untracked files and changes.
+  + `$ git add newfile.txt` The command `git add` will add the named file to the repo. To add all of the files in a directory, you can altertnatively run the command `$ git add .`. At this point, running `$ git status` would show that `newfile.txt` had been added to the repo.
+  + `$ git commit -a -m "[COMMIT COMMENT]"`. This command will commit the changes on the local repo. These changes will be associated with the `[COMMIT COMMENT]` you choose, so make sure that it is a meaningful comment that describes the changes you are making. If you were to run `$ git status` again, you would see that 
+  + `$ git checkout master`. This changes the current branch to `master`, instead of the `[NAME]_dev` branch you have been using.
+  + `$ git merge [NAME]_dev`. This command will merge the changes made on the `[NAME]_dev` branch to `master`. If there are no conflicts this will occur automatically, but if there are merge conflicts, you will have to manually resolve these merge conflicts. Conflicts generally emerge from when the same code is altered on different branches. In reality, this is unlikely to occur on smaller projects, but if you find yourself in a situation where you need to resolve a conflict, you can refer to this [guide](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-merge-conflicts). 
+  + `$ git pull origin`. This command will "pull" any changes from origin, as some files may have been changed on the remote side since the last local pull. Here there is also potential for merge conflicts to arise. The procedure for resolving them is the same as in the `merge` step.
+  + `$ git push origin`. This command will "push" any changes from the local origin to the remote origin, in turn updating it with the local changes made on your machine. Again, as before there is a potential for merge conflicts to arise. 
+  
+That's it! The commands above are the basic workflow for a larger project with multiple branches. In practice, you will often make commits directly to the `master` branch, especially on smaller projects. If this is the case, the below commands will usually be sufficient:
++ `$ git add [FILES]`
++ `$ git commit -a -m "[COMMIT COMMENT]"`
++ `$ git pull origin`
++ `$ git push origin`
+It should be noted that this method is NOT recommended for projects you do not own. That being said, it is often not necessary to have multiple branches especially for smaller projects. 
