@@ -26,5 +26,6 @@ So now that you see the importance of using `git`/github, we can start using it!
 
 If none of the above options work, go to this [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to find additional instructions for your machine. 
 To setup a github account, go github's [website](https://github.com/) and follow the on-screen directions to setup an account. With this all set up, you can move onto the next stage!
-## Part II: Understanding repo's and making a clone of an existin project
-
+## Part II: Understanding repo's and making a clone of an existing project
+In the scope of github, a repository, or repo, is the space in which a single project lives. For most purposes, a repo is equivalent to a directory and can hold almost anything you can put in a directory on your computer, though there are often storage limits on github. Roughly speaking, a repo **is** a project, so understanding how to maneuver them is key to using `git`/github. 
+There are two main types of repos: remote and local. Remote repos are stored on github and serve as "master" copies of a project. These are usually where the main changes are updated and saved, thereby making them accessible to all of the people working on a project. On the other hand, a local repo is the copy of a project that you have on your computer. A repo can be downloaded to your computer using the following command `$ git clone <github-URL>`. Moving forward, you will be working with the `test_project` project. Clone the repo using the command `$ git clone https://github.com/YesselmanLab/test_project.git`.
