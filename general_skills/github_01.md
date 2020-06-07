@@ -63,4 +63,6 @@ That's it! The commands above are the basic workflow for a larger project with m
 + `$ git commit -a -m "[COMMIT COMMENT]"`
 + `$ git pull origin`
 + `$ git push origin`
+
 It should be noted that this method is NOT recommended for projects you do not own. That being said, it is often not necessary to have multiple branches especially for smaller projects. 
+### Part IV: Starting A Repository
