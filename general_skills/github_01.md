@@ -43,4 +43,8 @@ Another important facet of using `git`/github is understanding branches. A branc
   + a variety of programmer-specific branches where person stores the specific updates and progress they are working on
   + versions of the code for different target operating systems
 
+With all of this basic knowledge, we can now take a look at typical `git`/github workflow.
+
 ## Part III: Basic Workflow
+Here we will cover what basic workflow you will encounter when using `git`/github. It should be noted that this coverage is slanted towards doing work on a large project, so some of these steps will not be relevant for smaller projects. In general, it's good to remember that there are not one size fits all solutions. Follow along with the below commands and their descriptions:
+  + from `test_project/`, enter the command `git checkout -b "[NAME]_dev"`
