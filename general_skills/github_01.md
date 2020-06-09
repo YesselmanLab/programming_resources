@@ -66,3 +66,14 @@ That's it! The commands above are the basic workflow for a larger project with m
 
 It should be noted that this method is NOT recommended for projects you do not own. That being said, it is often not necessary to have multiple branches especially for smaller projects. 
 ### Part IV: Starting A Repository
+
+The last major topic to discuss is how to create a repo. There are two general cases when it comes time to start one:
+1. Nothing has been done and you are starting the repo from scratch (typically more common)
+1. Some work on the project has already been done but you still want to start a new repo
+In both of these cases, you will need to press the "create a new repository" button on your profile page or go to [this](https://github.com/new) link. Before clicking the "create repository" button at the bottom, you will need to give the repo a name. This project name will be identical to the project name later on, so make sure you like it! While it can be changed, re-naming a repo is generally not recommended. In the event that some work has already been done on the project, you will want to make sure that the repo has the **EXACT** same name as the directory you are working out of. Next, you will choose the privacy setting of the repo. There are two options: public and private. These settings behave as you would expect and other users must be directly invited to private repos, else they will be unreachable/not visible to outside users. More settings do exist on this page, but at this point you can create the repo by clikcing the green "Create Repository" button at the bottom of the page. 
+
+With the repo created, it is time to make the first commit. For both situations, github presents clear instructions on what to do, and they are largely the same, with the major difference being that a commit must first be made for the "from-scratch" project. In this case, the command `git init` must first be run, which serves to establsh a git repository in the current directory. Next, the directions recommmend making a Readme and then adding and comitting it to the repo with the commands `git add README.md` and `git commit -m "first commit"`, respectively.
+
+From here on, the steps are identical for either repo situation. At this point, there is a local repo on your computer and an empty one on Github's server. These two need to be merged, which is accomplished with the command `$ git remote add origin [URL]`. Now that these two are linked together, the initial push from the local to remote repo is achieved with `$ git push -u origin master`. Congrats, you have now created a repo! It is actually surprisingly easy, and in the event that you run into any issues, do not hesitate to search for answers on Google, stackoverflow, etc! `git`/github are industry standard and a lot of questions have already been answered out there. 
+### Homework
+(T/F)
