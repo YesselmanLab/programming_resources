@@ -49,8 +49,8 @@ With all of this basic knowledge, we can now take a look at typical `git`/github
 
 ## Part III: Basic Workflow
 Here we will cover what basic workflow you will encounter when using `git`/github. It should be noted that this coverage is slanted towards doing work on a large project, so some of these steps will not be relevant for smaller projects. In general, it's good to remember that there are not one size fits all solutions. Follow along with the below commands and their descriptions:
-  + from `test_project/`, enter the command `git checkout -b "[NAME]_dev"`. This action creates a new local branch, called `[NAME]_dev`, which is where you will be doing your work.
-  + enter the command `git show-branch`. This should show all of branches in the project and there should be an asterisk next to the branch you are on. 
+  + from `test_project/`, enter the command `$ git checkout -b "[NAME]_dev"`. This action creates a new local branch, called `[NAME]_dev`, which is where you will be doing your work.
+  + enter the command `$ git show-branch`. This should show all of branches in the project and there should be an asterisk next to the branch you are on. 
   + `$ echo "THIS IS AN EXTRA LINE" >> README.md && echo "THIS IS A NEW FILE" >> newfile.txt`. This will concatenate the text "THIS IS AN EXTRA LINE" to the end of the readme and make a new file, `newfile.txt`
   + `$ git status`. This will show the current status of the local repo, which includes things like untracked files and changes.
   + `$ git add newfile.txt` The command `git add` will add the named file to the repo. To add all of the files in a directory, you can altertnatively run the command `$ git add .`. At this point, running `$ git status` would show that `newfile.txt` had been added to the repo.
