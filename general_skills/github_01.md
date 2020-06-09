@@ -91,6 +91,7 @@ Explain what the following `git` commands do:
   + `$ git commit`
   + `$ git pull origin`
   + `$ git init`
+  + `$ git remote add` 
 
 Make a **public** repo on your own account called "github-hw1". Once you create the repo, you must: 
 + Add a python script, an image of some sort, a .csv file and update the README.md using `$ git commit`
