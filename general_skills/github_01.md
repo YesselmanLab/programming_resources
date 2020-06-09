@@ -4,7 +4,8 @@ Welcome to the first `git`/github tutorial in the Yesselman Group's general prog
   + poor scalability - especially for larger projects (10k lines of code or more) this method becomes increasingly slow, easily taking 10-15 minutes to apply an update
   + potential for human error - updates are subject to copy and pasting mistakes! this is a major problem as every update can lead to a potential change in functionality or the emergence of new bugs
   + no back up - since all the files are stored as local copies, a crash for any of the contributors could lead to significant loss of progress
-  `git` aims to solve most of the above problems by using an automated system to monitor changes. Namely, `git` boasts the following advantages over manual version control:
+  
+ `git` aims to solve most of the above problems by using an automated system to monitor changes. Namely, `git` boasts the following advantages over manual version control:
   + strong scalability - `git`'s system is fast, even for large projects with thousands to millions of lines of code
   + consistent procedures - in being automated, `git` avoids unpredictable behavior and the potential for human error
   + distribution - because `git` is a commandline tool, projects can be downloaded with a single command instead of having to email around tarballs or zipped files of source code
