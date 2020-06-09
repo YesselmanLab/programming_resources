@@ -18,10 +18,11 @@ Clearly, `git`/github are superior to manual version control, but there are othe
   + RNAMake
   + Rossetta
   + XCMS
+
 *...and many many more!*
 
 So now that you see the importance of using `git`/github, we can start using it! To complete the rest of the tutorial, you will need to have `git` installed as well as a github account. If you do not have `git`, you can:
-+ install it on mac with `$ brew isntall git`
++ install it on mac with `$ brew install git`
 + install it on linux with `$ sudo apt install git-all` (sub `apt` for `dnf` for most non-Debian distributions)
 + install it on windows by going to this [link](https://git-scm.com/download/win) and follwing the directions
 
