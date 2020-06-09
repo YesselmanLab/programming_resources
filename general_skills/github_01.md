@@ -78,13 +78,20 @@ With the repo created, it is time to make the first commit. For both situations,
 From here on, the steps are identical for either repo situation. At this point, there is a local repo on your computer and an empty one on Github's server. These two need to be merged, which is accomplished with the command `$ git remote add origin [URL]`. Now that these two are linked together, the initial push from the local to remote repo is achieved with `$ git push -u origin master`. Congrats, you have now created a repo! It is actually surprisingly easy, and in the event that you run into any issues, do not hesitate to search for answers on Google, stackoverflow, etc! `git`/github are industry standard and a lot of questions have already been answered out there. 
 ### Homework
 (T/F) Manual version control actually has many advantages and it is often difficult to determine if you should use `git`/github or not. 
+
 (T/F) There are two types of repos: local and remote.
+
+(T/F) `git` is the underlying version control software whereas Github is a commercial implementation leveraging the technology for remote use. 
+
+(T/F) When starting a repo, you **CANNOT** have any files in the initial directory. 
+
+Bug busters: You have been working very hard on a team repository and making great progress. You have been saving your amazing files to your local repo using `$ git commit` to avoid losing progress. When your co-worker Allison clones in the repo, however, she does not see the work you have done. What could be going on here? 
 
 Explain what the following `git` commands do:
   + `$ git commit`
   + `$ git pull origin`
   + `$ git init`
-  
+
 Make a **public** repo on your own account called "github-hw1". Once you create the repo, you must: 
 + Add a python script, an image of some sort, a .csv file and update the README.md using `$ git commit`
 + Make at leat **5** commits to the remote repo using the commands `$ git pull origin` and `$ git push origin`
